@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-        "version": "2025-07-24",
+        "version": "2025-04-01",
         "title": "DanielTrivialAPI",
         "description": "A trivial example API for testing purposes with /daniel path."
     },
@@ -24,6 +24,15 @@
                         "required": true,
                         "type": "string",
                         "description": "Subscription ID"
+                    },
+                    {
+                        "name": "api-version",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "enum": [
+                            "2024-01-01"
+                        ]
                     }
                 ],
                 "responses": {
